@@ -115,7 +115,7 @@ spec:
     istio: ingressgateway
   servers:
   - hosts:
-    - tomcatapp.com
+    - caastestjenkins.com
     port:
       name: noelport
       number: 80
@@ -138,13 +138,13 @@ spec:
   gateways:
   - noeltomcatgw
   hosts:
-  - tomcatapp.com
+  - caastestjenkins.com
   http:
   - match:
     - uri:
         prefix: /
     route:
     - destination:
-        host: sprgboot-tomcat.noel-tomcat.svc.cluster.local
+        host: jen-mvn-service.devops-tools.svc.cluster.local
         port:
           number: 8090
