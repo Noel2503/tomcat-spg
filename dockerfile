@@ -1,7 +1,6 @@
 
 # Step 2: Use a smaller JRE image to run the application
-FROM openjdk:11-jre-slim
-
+FROM noel135/img-repo:latest
 # Set the working directory for the final image
 WORKDIR /app
 
